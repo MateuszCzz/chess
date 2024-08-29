@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello Page</title>
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+</head>
+<body>
+    <h1>Hello, Spring Boot with Thymeleaf and HTMX!</h1>
+    <button 
+        hx-get="/hello" 
+        hx-target="#message" 
+        hx-swap="innerHTML">
+        Click me to load message
+    </button>
+    
+    <div id="message"></div>
+</body>
+</html>
